@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body
+    style="width: 600px;margin: auto;padding: 0;font-family: Arial, Helvetica, sans-serif;font-size: 14px;color: #333">
+    <!-- gold bar -->
+    <table cellspacing="0" cellpadding="0" width="600px" class="header"
+        style="border-bottom-style: solid;border-bottom-color: #F0AB00;border-bottom-width: 8px;padding-top: 13px;padding-bottom: 12px">
+        <tr style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
+            <td style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
+                <table cellspacing="0" cellpadding="0">
+                    <tr style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
+                        <td class="logo" style="border-collapse: collapse;width: 61px;padding: 0;margin: 0">
+                            <img src="${user.sap_mailing_logo}"
+                                style="border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none" />
+                        </td>
+                        <td class="tagline"
+                            style="border-collapse: collapse;width: 600px;padding: 0;margin: 0;color: #888;font-weight: bold;font-size: 12px;padding-top: 2px">
+                            The Best-Run Businesses Run SAP</td>
+                    </tr>
+                </table>
+            </td>
+            <#if user.company_logo??>
+                <td align="right" style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
+                    <div class="companylogo" style="height: 32px;overflow: hidden"><img src="${user.company_logo}"
+                            style="border: 0;height: 32px;line-height: 100%;outline: none;text-decoration: none;width: auto" />
+                    </div>
+                </td>
+            </#if>
+        </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" width="600px">
+        <tr style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
+            <td class="main_first"
+                style="border-collapse: collapse;width: 600px;padding: 0;margin: 0;padding-top: 36px;padding-bottom: 12px">
+                <h1
+                    style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;font-size: 20px;color: #555;margin-bottom: 24px">
+                    Kedves ${user.firstName?html} ${user.lastName?html},</h1>
+                <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 18px">
+                    IT rendszerbiztonsági okokból a SuccessFactors (SF) rendszerbe való belépés módja megváltozik, ehhez első bejelentkezéskor hitelesítésre van szükség.
+Első lépésként a jelszavad beállítása szükséges az alábbi linkre kattintva vagy másold ki és illeszd be a böngésző címsorába.
+</p>
+            </td>
+        </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" width="600px">
+        <tr style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
+            <td align="middle" class="cta_container"
+                style="border-collapse: collapse;width: 600px;padding: 0;margin: 0;padding-top: 36px;padding-bottom: 36px">
+                <a href="${user.reset_password_link}" class="cta"
+                    style="font-family: Arial, Helvetica, sans-serif;color: #fff;background-color: #226ca9;background: #226ca9;background-image: linear-gradient(top, #008fcc, #2b3f7b);border-radius: 4px;font-size: 16px;text-decoration: none;padding: 8px 12px">Kattintson
+                    a linkre a jelszava visszaállításához</a>
+            </td>
+        </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" width="600px">
+        <tr style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
+            <td class="main"
+                style="border-collapse: collapse;width: 600px;padding: 0;margin: 0;padding-top: 12px;padding-bottom: 12px;word-wrap: break-word">
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 18px;word-wrap: break-word">
+                    Ha a fenti link nem jelenik meg vagy nem működik, másolja ki és illessze be az alábbi linket a
+                    böngésző címsorába.</p>
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 18px;word-wrap: break-word">
+                    <a href="${user.reset_password_link}"
+                        style="font-family: Arial, Helvetica, sans-serif;color: #226ca9">${user.reset_password_link?html}</a>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table cellspacing="0" cellpadding="0" width="600px">
+        <tr style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
+            <td class="main_last"
+                style="border-collapse: collapse;width: 600px;padding: 0;margin: 0;padding-top: 12px;padding-bottom: 36px">
+                <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;line-height: 18px">Üdvözlettel
+                    ,<br />
+                    SuccessFactors (MVMI Zrt. megbízásából)</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
