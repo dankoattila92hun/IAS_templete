@@ -421,8 +421,8 @@
                                                   style="border-collapse: collapse;width: 600px;padding: 0;margin: 0;color: #FFF;font-size: 18px;vertical-align: middle;-webkit-text-size-adjust: none;mso-line-height-rule: exactly;line-height: 20px;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;"
                                                   height="30" valign="middle" width="15">
                                                   <font face="arial"
-                                                    style="-webkit-text-size-adjust: none;font-family: arial;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                    IDENTITY AUTHENTICATION</font>
+                                                    style="-webkit-text-size-adjust: none;font-family: arial;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 20px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 10px !important;">
+                                                    SAP IDENTITY AUTHENTICATION</font>
                                                 </td>
                                               </tr>
                                             </tbody>
@@ -465,10 +465,10 @@
                                               <tr
                                                 style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                 <td
-                                                  style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 14px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
+                                                  style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 10px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                   <font face="arial"
                                                     style="-webkit-text-size-adjust: none;font-family: arial;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                    Kedves ${user.lastName?html} ${user.firstName?html},</font>
+                                                    <h1>Kedves ${user.lastName?html} ${user.firstName?html},</h1></font>
                                                 </td>
                                               </tr>
                                               <tr
@@ -489,7 +489,10 @@
                                                   style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 14px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                   <font face="arial"
                                                     style="-webkit-text-size-adjust: none;font-family: arial;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                    <b style="-webkit-text-size-adjust: none;">IT rendszerbiztonsági okokból a SuccessFactors (SF) rendszerbe való belépés módja megváltozik, ehhez első bejelentkezés előtt hitelesítésre van szükség.
+                                                    <b style="-webkit-text-size-adjust: none;">IT rendszerbiztonsági
+                                                      okokból a SuccessFactors (SF) rendszerbe való belépés módja
+                                                      megváltozik, ehhez első bejelentkezés előtt hitelesítésre van
+                                                      szükség.
                                                     </b>
                                                   </font>
                                                 </td>
@@ -517,7 +520,9 @@
                                                     <center>
                                                   <![endif]-->
                                                     <a href="${user.activate_account_link}" id="activation-link"
-                                                      style="border-radius: 4px;color: #fff;display: inline-block;font-family: Arial;font-size: 16px;line-height: 35px;padding:0 28px;text-align: center;text-decoration: none;-webkit-text-size-adjust: none;background-color: #226ca9;background: #226ca9;background-image: linear-gradient(top, #008fcc, #2b3f7b);mso-line-height-rule: exactly;">Következő lépésben a ${user.sp_name} fiók aktiválásához kattints az alábbi hivatkozásra. Ezen az oldalon módosíthatod a jelszavadat is.</a>
+                                                      style="border-radius: 4px;color: #fff;display: inline-block;font-family: Arial;font-size: 16px;line-height: 35px;padding:0 28px;text-align: center;text-decoration: none;-webkit-text-size-adjust: none;background-color: #226ca9;background: #226ca9;background-image: linear-gradient(top, #008fcc, #2b3f7b);mso-line-height-rule: exactly;">
+                                                      A ${user.sp_name} fiók aktiválásához kattints az alábbi
+                                                      hivatkozásra</a>
                                                     <!--[if mso]>
                                                     </center>
                                                   </v:roundrect>
@@ -525,17 +530,24 @@
                                                   </div>
                                                 </td>
                                               </tr>
+
                                               <tr
                                                 style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                 <td
                                                   style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 14px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                   <font face="arial"
                                                     style="-webkit-text-size-adjust: none;font-family: arial;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                    Kérjük, hogy a belépéssel kapcsolatos esetleges problémákat a Helpdesk felé jelezzétek vagy SM bejelentő felületen rögzítsétek.</font>
+                                                    Kérjük, hogy a belépéssel kapcsolatos esetleges problémákat a
+                                                    Helpdesk felé jelezzétek vagy SM bejelentő felületen rögzítsétek.
+                                                  </font>
+                                                  <br></br>
                                                 </td>
+
                                               </tr>
+
                                               <tr
                                                 style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
+
                                                 <td
                                                   style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 14px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                   <font face="arial"
@@ -543,21 +555,7 @@
                                                     ${user.activate_account_link}</font>
                                                 </td>
                                               </tr>
-                                              <tr
-                                                style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                <td
-                                                  style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 14px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                  &nbsp;</td>
-                                              </tr>
 
-
-
-                                              <tr
-                                                style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                <td
-                                                  style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 14px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                  &nbsp;</td>
-                                              </tr>
                                               <tr
                                                 style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                 <td
@@ -584,12 +582,7 @@
                                                     Üdvözlettel,</font>
                                                 </td>
                                               </tr>
-                                              <tr
-                                                style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                <td
-                                                  style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 14px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                  &nbsp;</td>
-                                              </tr>
+
                                               <tr
                                                 style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                 <td
@@ -630,20 +623,15 @@
                                             <tbody style="-webkit-text-size-adjust: none;">
                                               <tr
                                                 style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                <td height="32" valign="top" width="100%"
-                                                  style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 14px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                  &nbsp;</td>
-                                              </tr>
-                                              <tr
-                                                style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                 <td
                                                   style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;border-collapse: collapse;padding: 0;line-height: 20px;color: rgb(51, 51, 51);font-size: 14px;vertical-align: top;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                   <font face="arial"
                                                     style="-webkit-text-size-adjust: none;font-family: arial;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
-                                                    Kérjük ne válaszoljon - ez egy autómatikusan generált email.
+                                                    Kérjük ne válaszoljon - ez egy automatikusan generált e-mail.
                                                   </font>
                                                 </td>
                                               </tr>
+
                                               <tr
                                                 style="-webkit-text-size-adjust: none;mso-line-height-rule: exactly;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
                                                 <td

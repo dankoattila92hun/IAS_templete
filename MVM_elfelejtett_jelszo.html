@@ -9,27 +9,34 @@
     <!-- gold bar -->
     <table cellspacing="0" cellpadding="0" width="600px" class="header"
         style="border-bottom-style: solid;border-bottom-color: #F0AB00;border-bottom-width: 8px;padding-top: 13px;padding-bottom: 12px">
-        <tr style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
+        <tr style="border-collapse: collapse;width: 600px;padding: 0;margin: 0; background-color: #333">
             <td style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
                 <table cellspacing="0" cellpadding="0">
                     <tr style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
-                        <td class="logo" style="border-collapse: collapse;width: 61px;padding: 0;margin: 0">
+                        <td class="logo" style="border-collapse: collapse;width: 61px;padding: 10px; margin-right: 0;">
                             <img src="${user.sap_mailing_logo}"
-                                style="border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none" />
+                                style="border: 1px solid white;height: auto;line-height: 100%;outline: none;text-decoration: none; padding: 10px 10px 10px 10px;" />
                         </td>
-                        <td class="tagline"
+                        <!--<td class="tagline"
                             style="border-collapse: collapse;width: 600px;padding: 0;margin: 0;color: #888;font-weight: bold;font-size: 12px;padding-top: 2px">
-                            The Best-Run Businesses Run SAP</td>
+                            The Best-Run Businesses Run SAP</td>-->
+                            <td class="tagline"
+                            style="border-collapse: collapse;width: 600px; padding: 0;margin: 0;color: whitesmoke;font-size: 18px;vertical-align: middle;-webkit-text-size-adjust: none;mso-line-height-rule: exactly;line-height: 20px;padding-top: 20px !important;padding-right: 10px !important;padding-bottom: 20px !important;padding-left: 20px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;"
+                            height="30" valign="middle" width="15">
+                            <font face="arial"
+                              style="-webkit-text-size-adjust: none;font-family: arial;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;">
+                              SAP IDENTITY AUTHENTICATION</font>
+                          </td>
                     </tr>
                 </table>
             </td>
-            <#if user.company_logo??>
+            <!--<#if user.company_logo??>
                 <td align="right" style="border-collapse: collapse;width: 600px;padding: 0;margin: 0">
                     <div class="companylogo" style="height: 32px;overflow: hidden"><img src="${user.company_logo}"
                             style="border: 0;height: 32px;line-height: 100%;outline: none;text-decoration: none;width: auto" />
                     </div>
                 </td>
-            </#if>
+            </#if>-->
         </tr>
     </table>
     <table cellspacing="0" cellpadding="0" width="600px">
